@@ -1,0 +1,21 @@
+.searchBarInput {
+    color: var(--font-color);
+    background-color: var(--element-bg-color);
+    border-radius: var(--unit-x4);
+    border: var(--border-color) 2px solid;
+    padding: var(--unit) var(--unit-x3);
+    width: 100%;
+    max-width: 500px;
+    display: block;
+    margin: var(--unit-x4) auto var(--unit-x2) auto;
+    font-size: 1.5rem;
+    outline-style: none;
+}
+
+.searchBarInput:focus {
+    border-color: var(--border-color-active);
+}
+
+.searchBarInput::placeholder {
+    color: var(--placeholder-font-color);
+}

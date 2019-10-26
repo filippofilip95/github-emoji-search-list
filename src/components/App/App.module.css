@@ -1,0 +1,5 @@
+.app {
+    background-color: var(--bg-color);
+    height: 100vh;
+    overflow: hidden;
+}

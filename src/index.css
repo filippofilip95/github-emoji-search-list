@@ -1,5 +1,21 @@
+:root {
+    --main-bg-color: brown;
+    --unit: 0.5rem;
+    --unit-x2: 1rem;
+    --unit-x3: 1.5rem;
+    --unit-x4: 2rem;
+
+    --font-color: #eeeeee;
+    --placeholder-font-color: #989898;
+
+    --bg-color: #313131;
+    --element-bg-color: #414141;
+
+    --border-color: #525252;
+    --border-color-active: #eeeeee;
+}
+
 body {
-    margin: 0;
     font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
     'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
     sans-serif;
