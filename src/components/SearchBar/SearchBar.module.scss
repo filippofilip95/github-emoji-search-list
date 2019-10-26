@@ -1,0 +1,23 @@
+@import "../../constants/variables.modules";
+
+.searchBarInput {
+  color: $font-color;
+  background-color: $element-bg-color;
+  border-radius: $unit-x4;
+  border: $border-color 2px solid;
+  padding: $unit $unit-x2;
+  width: 100%;
+  max-width: 500px;
+  display: block;
+  margin: $unit-x4 auto $unit-x2 auto;
+  font-size: 1.5rem;
+  outline-style: none;
+}
+
+.searchBarInput:focus {
+  border-color: $border-color-active;
+}
+
+.searchBarInput::placeholder {
+  color: $placeholder-font-color
+}
