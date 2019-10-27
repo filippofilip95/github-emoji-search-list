@@ -1,10 +1,10 @@
 self.__precacheManifest = (self.__precacheManifest || []).concat([
   {
-    "revision": "a12be44052598c3cfb5ed95f35585a8a",
+    "revision": "4f701739d7d738dd85336bf37c0eea07",
     "url": "/github-emoji-search-list/index.html"
   },
   {
-    "revision": "e2072e8fc40f5f5ecf93",
+    "revision": "79f2dc03a91194e53397",
     "url": "/github-emoji-search-list/static/css/main.ed2f839a.chunk.css"
   },
   {
@@ -12,8 +12,8 @@ self.__precacheManifest = (self.__precacheManifest || []).concat([
     "url": "/github-emoji-search-list/static/js/2.be7087a4.chunk.js"
   },
   {
-    "revision": "e2072e8fc40f5f5ecf93",
-    "url": "/github-emoji-search-list/static/js/main.b2098e56.chunk.js"
+    "revision": "79f2dc03a91194e53397",
+    "url": "/github-emoji-search-list/static/js/main.acd2caae.chunk.js"
   },
   {
     "revision": "8ff58ad4ef6146ea61a7",
