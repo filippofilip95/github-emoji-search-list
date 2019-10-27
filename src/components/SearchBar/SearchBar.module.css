@@ -1,5 +1,4 @@
 .searchBarInput {
-    color: var(--font-color);
     background-color: var(--element-bg-color);
     border-radius: var(--unit-x4);
     border: var(--border-color) 2px solid;
@@ -7,7 +6,7 @@
     width: 100%;
     max-width: 500px;
     display: block;
-    margin: var(--unit-x4) auto var(--unit-x2) auto;
+    margin: var(--unit-x2) auto;
     font-size: 1.5rem;
     outline-style: none;
 }

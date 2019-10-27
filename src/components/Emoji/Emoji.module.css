@@ -1,0 +1,45 @@
+.emoji {
+    background-color: var(--element-bg-color);
+    border-radius: var(--unit-x2);
+    height: 80px;
+    width: 180px;
+    margin: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: var(--border-color) 2px solid;
+    outline-style: none;
+    padding: 0 var(--unit);
+}
+
+
+.emoji:hover {
+    border-color: var(--border-color-active);
+    cursor: pointer;
+}
+
+
+.emoji:hover .emojiInner {
+    white-space: normal;
+    text-overflow: initial;
+    overflow: visible;
+    z-index: 10;
+}
+
+.emojiInner {
+    white-space: nowrap;
+    overflow: hidden;
+    text-overflow: ellipsis;
+}
+
+.emojiImg {
+    height: 30px;
+    width: auto;
+    margin: 0 auto var(--unit) auto;
+    display: block;
+}
+
+.emojiName {
+    background-color: var(--border-color);
+    font-size: 0.75rem;
+}

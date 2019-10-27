@@ -1,15 +1,18 @@
 import React from 'react';
 
-import style from './App.module.css';
-import SearchBar from "../SearchBar";
+import EmojiList from "../EmojiList";
+import TopNavBar from "../TopNavBar";
 
-const App: React.FC = () => {
+function App() {
     return (
-        <div className={style.app}>
+        <>
             <header>
-                <SearchBar/>
+                <TopNavBar/>
             </header>
-        </div>
+            <main>
+                <EmojiList/>
+            </main>
+        </>
     );
 };
 
