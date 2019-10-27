@@ -15,7 +15,7 @@ function SearchBar({setSearchQuery}: SearchBarProps) {
     }, 350), []);
 
     function handleFilterChange(e: React.ChangeEvent<HTMLInputElement>) {
-        const {value} = e.target;
+        const value = e.target.value.toLowerCase();
 
         setValue(value);
         debounceLoadData(value);
