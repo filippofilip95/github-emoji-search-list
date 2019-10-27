@@ -15,7 +15,7 @@ export function useToggleTheme(): [boolean, Function] {
             emojiList.style.display = 'none';
             timeout.current! = setTimeout(() => {
                 emojiList.style.display = 'flex';
-            }, 100)
+            }, 200);
             document.documentElement.setAttribute('data-theme', checked ? 'dark' : 'light');
         }
 
