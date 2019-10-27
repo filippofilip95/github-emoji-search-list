@@ -11,7 +11,7 @@ function Emoji({name, url,}: EmojiProps) {
         <div className={style.emoji}>
             <div className={style.emojiInner}>
                 <img src={url} className={style.emojiImg} alt={name}/>
-                <code className={style.emojiName}>{`:${name}`}</code>
+                <code className={style.emojiName}>{`:${name}:`}</code>
             </div>
         </div>
     );
