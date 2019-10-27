@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/github-emoji-search-list/static/css/main.7cabeb1a.chunk.css",
-    "main.js": "/github-emoji-search-list/static/js/main.f7ea436c.chunk.js",
-    "main.js.map": "/github-emoji-search-list/static/js/main.f7ea436c.chunk.js.map",
+    "main.css": "/github-emoji-search-list/static/css/main.ed2f839a.chunk.css",
+    "main.js": "/github-emoji-search-list/static/js/main.091f9ab9.chunk.js",
+    "main.js.map": "/github-emoji-search-list/static/js/main.091f9ab9.chunk.js.map",
     "runtime-main.js": "/github-emoji-search-list/static/js/runtime-main.86f3b986.js",
     "runtime-main.js.map": "/github-emoji-search-list/static/js/runtime-main.86f3b986.js.map",
-    "static/js/2.af7d0f3a.chunk.js": "/github-emoji-search-list/static/js/2.af7d0f3a.chunk.js",
-    "static/js/2.af7d0f3a.chunk.js.map": "/github-emoji-search-list/static/js/2.af7d0f3a.chunk.js.map",
+    "static/js/2.be7087a4.chunk.js": "/github-emoji-search-list/static/js/2.be7087a4.chunk.js",
+    "static/js/2.be7087a4.chunk.js.map": "/github-emoji-search-list/static/js/2.be7087a4.chunk.js.map",
     "index.html": "/github-emoji-search-list/index.html",
-    "precache-manifest.490769c3aeb6d2e2d955df25b1d95b18.js": "/github-emoji-search-list/precache-manifest.490769c3aeb6d2e2d955df25b1d95b18.js",
+    "precache-manifest.d9a9c3c1d6e4cc1ee7c1930048a8d5bb.js": "/github-emoji-search-list/precache-manifest.d9a9c3c1d6e4cc1ee7c1930048a8d5bb.js",
     "service-worker.js": "/github-emoji-search-list/service-worker.js",
-    "static/css/main.7cabeb1a.chunk.css.map": "/github-emoji-search-list/static/css/main.7cabeb1a.chunk.css.map"
+    "static/css/main.ed2f839a.chunk.css.map": "/github-emoji-search-list/static/css/main.ed2f839a.chunk.css.map"
   },
   "entrypoints": [
     "static/js/runtime-main.86f3b986.js",
-    "static/js/2.af7d0f3a.chunk.js",
-    "static/css/main.7cabeb1a.chunk.css",
-    "static/js/main.f7ea436c.chunk.js"
+    "static/js/2.be7087a4.chunk.js",
+    "static/css/main.ed2f839a.chunk.css",
+    "static/js/main.091f9ab9.chunk.js"
   ]
 }
