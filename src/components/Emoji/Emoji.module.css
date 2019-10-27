@@ -1,5 +1,6 @@
 .emoji {
     background-color: var(--element-bg-color);
+    transition: border-color 0.2s ease;
     border-radius: var(--unit-x2);
     height: 80px;
     width: 180px;
