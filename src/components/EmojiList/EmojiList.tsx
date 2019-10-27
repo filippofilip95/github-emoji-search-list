@@ -17,10 +17,14 @@ function EmojiList({searchQuery}: EmojiListProps) {
         return <code>Loading...</code>
     }
 
-
     if (data) {
-        const filteredEmoji = Object.entries(data).filter(item => item[0].includes(searchQuery));
+        const emoji = Object.entries(data);
 
+        if (!emoji.length) {
+            return <code>Nothing found</code>
+        }
+
+        const filteredEmoji = emoji.filter(item => item[0].includes(searchQuery));
 
         return <EmojiListView emojiList={filteredEmoji}/>
     }

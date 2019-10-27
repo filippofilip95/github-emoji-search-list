@@ -1,5 +1,6 @@
 import React from 'react';
 import SearchBar from "../SearchBar";
+import ThemeSwitcher from "../ThemeSwitcher";
 
 interface TopNavBarProps {
     setSearchQuery: Function
@@ -7,7 +8,10 @@ interface TopNavBarProps {
 
 function TopNavBar({setSearchQuery}: TopNavBarProps) {
     return (
-        <SearchBar setSearchQuery={setSearchQuery}/>
+        <>
+            <SearchBar setSearchQuery={setSearchQuery}/>
+            <ThemeSwitcher/>
+        </>
     );
 }
 

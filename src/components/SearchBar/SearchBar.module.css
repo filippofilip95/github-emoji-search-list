@@ -1,5 +1,5 @@
 .searchBarInput {
-    transition: border-color 0.2s ease;
+    transition: border-color 0.2s ease, background-color 0.2s ease;
     background-color: var(--element-bg-color);
     border-radius: var(--unit-x4);
     border: var(--border-color) 2px solid;
