@@ -10,7 +10,7 @@ interface SearchBarProps {
 function SearchBar({setSearchQuery}: SearchBarProps) {
     const [value, setValue] = useState<string>('');
 
-    const debounceLoadData = useCallback(debounce((value: string) => {
+    const debounceSetSearchQuery = useCallback(debounce((value: string) => {
         setSearchQuery(value)
     }, 350), []);
 
@@ -18,7 +18,7 @@ function SearchBar({setSearchQuery}: SearchBarProps) {
         const value = e.target.value.toLowerCase();
 
         setValue(value);
-        debounceLoadData(value);
+        debounceSetSearchQuery(value);
     }
 
     return (

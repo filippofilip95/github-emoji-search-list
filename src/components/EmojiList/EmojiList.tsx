@@ -20,11 +20,11 @@ function EmojiList({searchQuery}: EmojiListProps) {
     if (data) {
         const emoji = Object.entries(data);
 
-        if (!emoji.length) {
+        const filteredEmoji = emoji.filter(item => item[0].includes(searchQuery));
+
+        if (!filteredEmoji.length) {
             return <code>Nothing found</code>
         }
-
-        const filteredEmoji = emoji.filter(item => item[0].includes(searchQuery));
 
         return <EmojiListView emojiList={filteredEmoji}/>
     }

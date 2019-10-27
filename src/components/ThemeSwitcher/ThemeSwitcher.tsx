@@ -16,7 +16,8 @@ function ThemeSwitcher() {
                     className="toggle-input"
                     type="checkbox"
                     checked={checked}
-                    onChange={handleChange}/>
+                    onChange={handleChange}
+                />
                 <div className="toggle-bg"/>
                 <div className="toggle-switch">
                     <div className="toggle-switch-figure"/>
