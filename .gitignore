@@ -21,6 +21,8 @@
 npm-debug.log*
 yarn-debug.log*
 yarn-error.log*
+
+# idea
 /.idea/github-emoji-search-list.iml
 /.idea/misc.xml
 /.idea/modules.xml
