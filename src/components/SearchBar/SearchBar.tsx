@@ -12,7 +12,7 @@ function SearchBar({setSearchQuery}: SearchBarProps) {
 
     const debounceLoadData = useCallback(debounce((value: string) => {
         setSearchQuery(value)
-    }, 300), []);
+    }, 500), []);
 
     function handleFilterChange(e: React.ChangeEvent<HTMLInputElement>) {
         const {value} = e.target;
