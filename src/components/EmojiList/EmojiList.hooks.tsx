@@ -1,5 +1,4 @@
 import {useEffect, useState} from "react";
-import mockedData from "./mockedData";
 
 export function useGithubApi(url: string) {
     const [loading, setLoading] = useState<boolean>(false);
@@ -10,14 +9,13 @@ export function useGithubApi(url: string) {
         setLoading(true);
 
         try {
-            // const response = await fetch(`https://api.github.com${url}`);
-            const response = {status: 200}
+            const response = await fetch(`https://api.github.com${url}`);
+
             if (response.status === 200) {
-                // const emoji = await response.json();
-                // console.log(emoji);
-                setData(mockedData);
+                const emoji = await response.json();
+                setData(emoji);
             } else {
-                // throw new Error(response.statusText);
+                throw new Error(response.statusText);
             }
 
         } catch (e) {

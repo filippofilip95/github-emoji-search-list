@@ -54,6 +54,9 @@ main {
     overflow-y: scroll;
     height: calc(100% - 80px);
     padding: 0 var(--unit-x4);
+    padding-top: var(--unit-x2);
+    display: flex;
+    justify-content: center;
 }
 
 #root {
