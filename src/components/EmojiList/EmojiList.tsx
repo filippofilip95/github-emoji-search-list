@@ -18,9 +18,7 @@ function EmojiList({searchQuery}: EmojiListProps) {
     }
 
     if (data) {
-        const emoji = Object.entries(data);
-
-        const filteredEmoji = emoji.filter(item => item[0].includes(searchQuery));
+        const filteredEmoji = Object.entries(data).filter(item => item[0].includes(searchQuery));
 
         if (!filteredEmoji.length) {
             return <code>Nothing found</code>
