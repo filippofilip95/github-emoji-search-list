@@ -28,7 +28,7 @@ export function useGithubApi(url: string) {
 
     useEffect(() => {
         fetchEmoji();
-    }, []);
+    }, [url]);
 
 
     return {loading, error, data}
