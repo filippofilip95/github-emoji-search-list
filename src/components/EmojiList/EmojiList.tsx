@@ -2,7 +2,11 @@ import React from 'react';
 import {useGithubApi} from "./EmojiList.hooks";
 import EmojiListView from "./EmojiList.view";
 
-function EmojiList() {
+interface EmojiListProps {
+    searchQuery: string
+}
+
+function EmojiList({searchQuery}: EmojiListProps) {
     const {loading, error, data} = useGithubApi('/emojis');
 
     if (error) {
@@ -10,11 +14,15 @@ function EmojiList() {
     }
 
     if (loading) {
-        return <code>{loading}</code>
+        return <code>Loading...</code>
     }
 
+
     if (data) {
-        return <EmojiListView emojiList={Object.entries(data)}/>
+        const filteredEmoji = Object.entries(data).filter(item => item[0].includes(searchQuery));
+
+
+        return <EmojiListView emojiList={filteredEmoji}/>
     }
 
     return null

@@ -4,7 +4,7 @@ import Emoji from "../Emoji";
 import {TEmojiList, TEmoji} from "../../types";
 
 interface EmojiListViewProps {
-    emojiList: TEmojiList
+    emojiList: TEmojiList | any
 }
 
 function EmojiListView({emojiList}: EmojiListViewProps) {

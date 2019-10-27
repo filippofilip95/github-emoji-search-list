@@ -1,9 +1,13 @@
 import React from 'react';
 import SearchBar from "../SearchBar";
 
-function TopNavBar() {
+interface TopNavBarProps {
+    setSearchQuery: Function
+}
+
+function TopNavBar({setSearchQuery}: TopNavBarProps) {
     return (
-        <SearchBar/>
+        <SearchBar setSearchQuery={setSearchQuery}/>
     );
 }
 
