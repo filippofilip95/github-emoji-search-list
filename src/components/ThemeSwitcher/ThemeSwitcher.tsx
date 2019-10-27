@@ -1,13 +1,9 @@
 import React, {useState} from 'react';
 import './ThemeSwitcher.scss'
+import {useToggleTheme} from "./ThemeSwitcher.hooks";
 
 function ThemeSwitcher() {
-    const [checked, setChecked] = useState<boolean>(true);
-
-    const handleChange = (e: any) => {
-        document.documentElement.setAttribute('data-theme', e.target.checked ? 'dark' : 'light');
-        setChecked(e.target.checked)
-    };
+    const [checked, setChecked] = useToggleTheme();
 
     return (
         <div className="themeWrapper">
@@ -16,7 +12,7 @@ function ThemeSwitcher() {
                     className="toggle-input"
                     type="checkbox"
                     checked={checked}
-                    onChange={handleChange}
+                    onChange={(e: React.ChangeEvent<HTMLInputElement>) => setChecked(e.target.checked)}
                 />
                 <div className="toggle-bg"/>
                 <div className="toggle-switch">

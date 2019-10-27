@@ -9,7 +9,7 @@ interface EmojiListViewProps {
 
 function EmojiListView({emojiList}: EmojiListViewProps) {
     return (
-        <div className={style.emojiList}>
+        <div className={style.emojiList} id='emoji-list'>
             {emojiList.map((item: TEmoji) => (
                 <Emoji
                     key={item[0]}
