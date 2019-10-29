@@ -66,7 +66,6 @@ menu {
 
 nav h1 {
     font-size: 1.6rem;
-    margin-left: var(--unit-x2);
 }
 
 main {
@@ -91,8 +90,13 @@ code {
     monospace;
 }
 
-.github-logo {
+.github-repo-link {
     margin-right: var(--unit-x2);
+    transition:  opacity 0.2s ease;
+}
+
+.github-repo-link:hover {
+    opacity: 0.8;
 }
 
 /*MEDIA*/

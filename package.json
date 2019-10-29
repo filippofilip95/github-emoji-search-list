@@ -1,6 +1,7 @@
 {
   "name": "github-emoji-search-list",
-  "version": "0.1.0",
+  "author": "Fili Papranec",
+  "version": "1.2¬.0",
   "homepage": "https://filippofilip95.github.io/github-emoji-search-list",
   "private": true,
   "dependencies": {
