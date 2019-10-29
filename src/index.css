@@ -52,11 +52,16 @@ header {
 }
 
 nav {
+    border-bottom: var(--border-color) 2px solid;
+}
+
+menu {
+    margin: 0 auto;
     display: flex;
     justify-content: space-between;
     align-items: center;
     padding: 0 var(--unit-x3);
-    border-bottom: var(--border-color) 2px solid;
+    max-width: 1440px;
 }
 
 nav h1 {
@@ -85,6 +90,36 @@ code {
     font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
     monospace;
 }
+
+.github-logo {
+    margin-right: var(--unit-x2);
+}
+
+/*MEDIA*/
+@media only screen and (max-width: 1024px) {
+    nav h1 {
+        font-size: 1rem;
+    }
+}
+
+@media only screen and (max-width: 800px) {
+    nav h1 {
+        font-size: 0.8rem;
+    }
+}
+
+@media only screen and (max-width: 650px) {
+    nav h1 {
+        display: none;
+    }
+}
+
+@media only screen and (max-width: 450px) {
+    main {
+        padding: 0;
+    }
+}
+
 
 /*! minireset.css v0.0.6 | MIT License | github.com/jgthms/minireset.css */
 html, body, p, ol, ul, li, dl, dt, dd, blockquote, figure, fieldset, legend, textarea, pre, iframe, hr, h1, h2, h3, h4, h5, h6 {

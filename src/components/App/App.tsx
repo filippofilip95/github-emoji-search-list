@@ -11,12 +11,14 @@ function App() {
     return (
         <>
             <nav>
-                <GithubIcon color='white' />
-                <h1>
-                    GitHub Emoji List Search
-                </h1>
-                <SearchBar setSearchQuery={setSearchQuery}/>
-                <ThemeSwitcher/>
+                <menu>
+                    <GithubIcon color='white'/>
+                    <h1>
+                        GitHub Emoji List Search
+                    </h1>
+                    <SearchBar setSearchQuery={setSearchQuery}/>
+                    <ThemeSwitcher/>
+                </menu>
             </nav>
             <main>
                 <EmojiList searchQuery={searchQuery}/>

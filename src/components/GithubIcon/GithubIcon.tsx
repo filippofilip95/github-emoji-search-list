@@ -7,7 +7,7 @@ interface GithubIconProps {
 
 function GithubIcon({color}: GithubIconProps) {
     return (
-        <svg className="octicon octicon-mark-github v-align-middle" height="32" viewBox="0 0 16 16" version="1.1"
+        <svg className="github-logo" height="32" viewBox="0 0 16 16" version="1.1"
              width="32" aria-hidden="true">
             <path
                 fill-rule="evenodd"

@@ -45,3 +45,24 @@
     background-color: var(--border-color);
     font-size: 0.85rem;
 }
+
+
+@media only screen and (max-width: 750px) {
+    .emoji {
+        width: 160px;
+        min-width: 160px;
+    }
+}
+
+@media only screen and (max-width: 750px) {
+    .emoji {
+        width: 140px;
+        min-width: 140px;
+    }
+}
+
+@media only screen and (max-width: 430px) {
+    .emoji {
+        width: 40%;
+    }
+}
