@@ -37,6 +37,7 @@ body {
     -moz-osx-font-smoothing: grayscale;
     background-color: var(--bg-color);
     transition: background-color 0.2s ease;
+    overflow: hidden;
 }
 
 header {
@@ -48,6 +49,19 @@ header {
     border-bottom: var(--border-color) 2px solid;
     padding: 0 var(--unit-x4);
     position: relative;
+}
+
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 var(--unit-x3);
+    border-bottom: var(--border-color) 2px solid;
+}
+
+nav h1 {
+    font-size: 1.6rem;
+    margin-left: var(--unit-x2);
 }
 
 main {

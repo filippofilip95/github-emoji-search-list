@@ -1,16 +1,23 @@
 import React, {useState} from 'react';
 
 import EmojiList from "../EmojiList";
-import TopNavBar from "../TopNavBar";
+import ThemeSwitcher from "../ThemeSwitcher";
+import SearchBar from "../SearchBar";
+import GithubIcon from "../GithubIcon";
 
 function App() {
     const [searchQuery, setSearchQuery] = useState<string>('');
 
     return (
         <>
-            <header>
-                <TopNavBar setSearchQuery={setSearchQuery}/>
-            </header>
+            <nav>
+                <GithubIcon color='white' />
+                <h1>
+                    GitHub Emoji List Search
+                </h1>
+                <SearchBar setSearchQuery={setSearchQuery}/>
+                <ThemeSwitcher/>
+            </nav>
             <main>
                 <EmojiList searchQuery={searchQuery}/>
             </main>

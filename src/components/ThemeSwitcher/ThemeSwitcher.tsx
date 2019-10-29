@@ -1,4 +1,4 @@
-import React, {useState} from 'react';
+import React from 'react';
 import './ThemeSwitcher.scss'
 import {useToggleTheme} from "./ThemeSwitcher.hooks";
 
