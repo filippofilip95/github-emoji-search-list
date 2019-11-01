@@ -12,7 +12,7 @@ function App() {
         <>
             <nav>
                 <menu>
-                    <GithubIcon color='white'/>
+                    <GithubIcon/>
                     <h1>
                         GitHub Emoji List Search
                     </h1>

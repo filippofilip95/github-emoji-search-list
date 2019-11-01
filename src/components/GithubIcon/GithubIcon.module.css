@@ -1,0 +1,10 @@
+.gitHubLogo {
+    fill: var(--font-color);
+    width: 32px;
+    height: 32px;
+}
+
+[data-theme="light"] .gitHubLogo {
+    fill: var(--font-color)
+}
+
