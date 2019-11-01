@@ -12,10 +12,12 @@ function App() {
         <>
             <nav>
                 <menu>
-                    <GithubIcon/>
-                    <h1>
-                        GitHub Emoji List Search
-                    </h1>
+                    <a href="https://github.com/filippofilip95/github-emoji-search-list" target="_blank">
+                        <GithubIcon/>
+                        <h1>
+                            GitHub Emoji List Search
+                        </h1>
+                    </a>
                     <SearchBar setSearchQuery={setSearchQuery}/>
                     <ThemeSwitcher/>
                 </menu>

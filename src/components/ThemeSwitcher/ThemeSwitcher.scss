@@ -16,6 +16,8 @@ FCFCFC - stars
 .themeWrapper {
   box-sizing: content-box;
   transform: scale(0.5);
+  position: relative;
+  right: -50px;
 }
 
 @media only screen and (max-width: 750px) {
