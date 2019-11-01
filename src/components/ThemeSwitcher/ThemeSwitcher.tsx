@@ -2,8 +2,12 @@ import React from 'react';
 import './ThemeSwitcher.scss'
 import {useToggleTheme} from "./ThemeSwitcher.hooks";
 
-function ThemeSwitcher() {
-    const [checked, setChecked] = useToggleTheme();
+interface ThemeSwitcherProps {
+    setIsEmojiShown: Function
+}
+
+function ThemeSwitcher({setIsEmojiShown}: ThemeSwitcherProps) {
+    const [checked, setChecked] = useToggleTheme(setIsEmojiShown);
 
     return (
         <div className="themeWrapper">

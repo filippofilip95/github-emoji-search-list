@@ -7,6 +7,7 @@ import GithubIcon from "../GithubIcon";
 
 function App() {
     const [searchQuery, setSearchQuery] = useState<string>('');
+    const [isEmojiShown, setIsEmojiShown] = useState<boolean>(true);
 
     return (
         <>
@@ -19,11 +20,11 @@ function App() {
                         </h1>
                     </a>
                     <SearchBar setSearchQuery={setSearchQuery}/>
-                    <ThemeSwitcher/>
+                    <ThemeSwitcher setIsEmojiShown={setIsEmojiShown}/>
                 </menu>
             </nav>
             <main>
-                <EmojiList searchQuery={searchQuery}/>
+                <EmojiList searchQuery={searchQuery} isEmojiShown={isEmojiShown}/>
             </main>
         </>
     );

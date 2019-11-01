@@ -4,10 +4,11 @@ import EmojiListView from "./EmojiList.view";
 import {filterEmoji} from "./EmojiList.utils";
 
 interface EmojiListProps {
-    searchQuery: string
+    searchQuery: string,
+    isEmojiShown: boolean
 }
 
-function EmojiList({searchQuery}: EmojiListProps) {
+function EmojiList({searchQuery, isEmojiShown}: EmojiListProps) {
     const {loading, error, data} = useGithubApi('/emojis');
 
     if (error) {
@@ -25,7 +26,7 @@ function EmojiList({searchQuery}: EmojiListProps) {
             return <code>Nothing found</code>
         }
 
-        return <EmojiListView emojiList={filteredEmoji}/>
+        return <EmojiListView emojiList={filteredEmoji} isEmojiShown={isEmojiShown}/>
     }
 
     return null

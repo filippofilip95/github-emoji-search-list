@@ -2,26 +2,31 @@ import {useEffect, useRef, useState} from "react";
 // @ts-ignore
 import Timeout from 'NodeJS';
 
-export function useToggleTheme(): [boolean, Function] {
+export function useToggleTheme(setIsEmojiShown: Function): [boolean, Function] {
     const [checked, setChecked] = useState<boolean>(true);
-
-    const timeout = useRef<Timeout>();
+    const timeoutToHide = useRef<Timeout>();
+    const timeoutToChangeTheme = useRef<Timeout>();
 
     useEffect(() => {
+        setIsEmojiShown(false);
 
-        const emojiList = document.getElementById('emoji-list');
-
-        if (emojiList) {
-            emojiList.style.display = 'none';
-            timeout.current! = setTimeout(() => {
-                emojiList.style.display = 'flex';
-            }, 200);
+        timeoutToHide.current! = setTimeout(() => {
             document.documentElement.setAttribute('data-theme', checked ? 'dark' : 'light');
+
+            timeoutToChangeTheme.current! = setTimeout(() => {
+                setIsEmojiShown(true);
+            }, 200);
+
+        }, 200);
+
+
+        const timeout1 = timeoutToHide.current;
+        const timeout2 = timeoutToChangeTheme.current;
+
+        return () => {
+            clearTimeout(timeout1);
+            clearTimeout(timeout2);
         }
-
-        const currentTimeout = timeout.current;
-
-        return () => clearTimeout(currentTimeout);
 
     }, [checked]);
 
