@@ -1,6 +1,7 @@
 import React from 'react';
 import {useGithubApi} from "./EmojiList.hooks";
 import EmojiListView from "./EmojiList.view";
+import {filterEmoji} from "./EmojiList.utils";
 
 interface EmojiListProps {
     searchQuery: string
@@ -18,7 +19,7 @@ function EmojiList({searchQuery}: EmojiListProps) {
     }
 
     if (data) {
-        const filteredEmoji = Object.entries(data).filter(item => item[0].includes(searchQuery));
+        const filteredEmoji = filterEmoji(data, searchQuery);
 
         if (!filteredEmoji.length) {
             return <code>Nothing found</code>
