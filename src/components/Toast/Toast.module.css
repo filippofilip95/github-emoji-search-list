@@ -1,0 +1,16 @@
+.emojiImg {
+    height: 30px;
+    width: auto;
+    margin-right: var(--unit);
+}
+
+.emojiName {
+    background-color: var(--element-bg-color);
+    font-size: 0.85rem;
+    margin-right: var(--unit);
+}
+
+.toast {
+    display: flex;
+    align-items: center;
+}
