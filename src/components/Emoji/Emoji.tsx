@@ -1,8 +1,9 @@
 import React from 'react';
 import cogoToast from "cogo-toast";
 import style from './Emoji.module.css';
-import {copyText} from "../../helpers";
 import {toastOptions} from "./Emoji.constants";
+import Toast from "../Toast";
+import {copyText} from "./Emoji.utils";
 
 interface EmojiProps {
     name: string,
@@ -12,7 +13,8 @@ interface EmojiProps {
 function Emoji({name, url,}: EmojiProps) {
     const handleOnClick = () => {
         copyText(`:${name}:`);
-        cogoToast.info('Copied to clipboard!', toastOptions);
+        // @ts-ignore
+        cogoToast.info(<Toast url={url} name={name}/>, toastOptions);
     };
 
     return (
