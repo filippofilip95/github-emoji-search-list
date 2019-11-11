@@ -1,35 +1,43 @@
 import {useEffect, useRef, useState} from "react";
 // @ts-ignore
 import Timeout from 'NodeJS';
+import {
+    loadDocumentTheme,
+    saveAndSetDocumentTheme,
+} from "../../helpers/theme.utils";
 
 export function useToggleTheme(setIsEmojiShown: Function): [boolean, Function] {
-    const [checked, setChecked] = useState<boolean>(true);
+    const [checked, setChecked] = useState<boolean>(loadDocumentTheme() !== 'light');
     const timeoutToHide = useRef<Timeout>();
     const timeoutToChangeTheme = useRef<Timeout>();
+    const isInitialMount = useRef<boolean>(true);
 
     useEffect(() => {
-        setIsEmojiShown(false);
+        if (isInitialMount.current) {
+            isInitialMount.current = false;
+        } else {
 
-        timeoutToHide.current! = setTimeout(() => {
-            document.documentElement.setAttribute('data-theme', checked ? 'dark' : 'light');
+            setIsEmojiShown(false);
 
-            timeoutToChangeTheme.current! = setTimeout(() => {
-                setIsEmojiShown(true);
+            timeoutToHide.current! = setTimeout(() => {
+                saveAndSetDocumentTheme(checked ? 'dark' : 'light');
+
+                timeoutToChangeTheme.current! = setTimeout(() => {
+                    setIsEmojiShown(true);
+                }, 200);
+
             }, 200);
 
-        }, 200);
 
+            const timeout1 = timeoutToHide.current;
+            const timeout2 = timeoutToChangeTheme.current;
 
-        const timeout1 = timeoutToHide.current;
-        const timeout2 = timeoutToChangeTheme.current;
-
-        return () => {
-            clearTimeout(timeout1);
-            clearTimeout(timeout2);
+            return () => {
+                clearTimeout(timeout1);
+                clearTimeout(timeout2);
+            }
         }
-
     }, [checked]);
-
 
     return [checked, setChecked];
 }

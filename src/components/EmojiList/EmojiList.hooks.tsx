@@ -1,5 +1,5 @@
 import {useEffect, useState} from "react";
-import {getResponseCache, setResponseCache} from "./EmojiList.utils";
+import {getResponseCache, setResponseCache} from "../../helpers/cache.utils";
 
 export function useGithubApi(url: string) {
     const [loading, setLoading] = useState<boolean>(false);
