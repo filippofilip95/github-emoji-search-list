@@ -15,3 +15,8 @@ Open [http://localhost:3000](http://localhost:3000) to view it in the browser.
 
 Builds the app for production to the `build` folder.<br />
 It correctly bundles React in production mode and optimizes the build for the best performance.
+
+
+## Author
+
+Made by [Filip Papranec](https://github.com/filippofilip95), founder of [Digitaliko](https://www.digitaliko.com/?utm_source=github&utm_medium=readme&utm_campaign=github-emoji-search-list), a Slovak studio building custom software and AI agents.
